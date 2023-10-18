@@ -11,6 +11,12 @@ set_technology = {
 	basic_train = 1
 }
 
+add_ideas = {
+	IRE_hate_england_3
+	IRE_potato_ggamja
+	IRE_irish_republic_army
+}
+
 set_convoys = 10
 
 recruit_character = IRE_Éamon_de_valera

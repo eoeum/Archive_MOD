@@ -54,6 +54,13 @@ focus_tree = {
 			set_variable = {
 				fra_res = 100
 			}
+			hidden_effect = {
+				country_event = {
+					id =  FRA_prov_event.124
+					days = 70
+					random_days = 20
+				}
+			}
 		}
 	}
 	#산업중점
@@ -653,11 +660,6 @@ focus_tree = {
 				add_compliance = 100
 			}
 			hidden_effect = {
-				country_event = {
-					id =  FRA_prov_event.124
-					days = 20
-					random_days = 20
-				}
 			}
 		}
 	}
@@ -1107,6 +1109,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_focus_london_bridge
 		}
+		bypass = {
+			ENG = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			country_event = {
 				id = FRA_prov_event.8
@@ -1129,6 +1136,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_focus_london_3
+		}
+		bypass = {
+			ENG = {
+				exists = no
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -2587,6 +2599,9 @@ focus_tree = {
 		cost = 1
 		x = 43
 		y = 6
+		available = {
+			communism > 0.15
+		}
 		mutually_exclusive = {
 			focus = FRA_focus_par_6
 			focus = FRA_focus_par_5
@@ -3207,7 +3222,7 @@ focus_tree = {
 		x = 10
 		y = 5
 		prerequisite = {
-			focus = FRA_focus_resistance_4
+			focus = FRA_focus_resistance_6
 		}
 		prerequisite = {
 			focus = FRA_focus_resistance_3
@@ -3271,7 +3286,7 @@ focus_tree = {
 			add_manpower = 10000
 			add_timed_idea = {
 				idea = FRA_lib_army
-				days = 300
+				days = 500
 			}
 		}
 	}
@@ -3499,7 +3514,12 @@ focus_tree = {
 			}
 			activate_mission = FRA_rebuild_dec
 			hidden_effect = {
+				country_event = {
+					id = BA_super.7
+					days = 1
+				}
 				load_focus_tree = FRA_focus_win
+				clr_country_flag = FRA_propaganda_available
 			}
 		}
 	}

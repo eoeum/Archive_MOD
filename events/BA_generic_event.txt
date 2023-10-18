@@ -175,10 +175,27 @@ country_event = {
 	picture = GFX_event_halowin
 	
 	fire_only_once = yes	
+	hidden = no
+	trigger = {
+		date > 1936.10.25
+	}
+	
+	option = { 
+		name = BA_generic_event.401.a
+    }
+}
+country_event = {
+	id = BA_generic_event.402 # 겨울 전쟁을 지셨군요 유감이에요~
+	title = BA_generic_event.402.t
+	desc = BA_generic_event.402.d
+	picture = GFX_event_dafuq_boom
+	
+	fire_only_once = yes	
     is_triggered_only = yes
 	hidden = no
 	
 	option = { 
-		name = BA_generic_event.401.a
+		name = BA_generic_event.402.a
+		custom_effect_tooltip = BA_generic_event_402_TT
     }
 }
